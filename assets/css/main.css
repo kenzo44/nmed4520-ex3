@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Used an older version of illustrator...Hack to make it responsive */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
+}
+
+/* .poodle_cloud{
+    position: relative;
+    animation-name: clouds;
+    animation-duration: 10s;
+}
+.sword_cloud{
+    position: relative;
+}
+@keyframes clouds{
+    0%{
+        transform: translate(-50%);
+
+    }
+    100%{
+        transform: translate(10%);
+    }
+} */
+
+.plane_front{
+    position: relative;
+    animation-name: ghostrider;
+    opacity: 0;
+    animation-duration: 1s;
+}
+@keyframes ghostrider{
+    0%{
+
+        opacity: 10;
+    }
+    10%{
+        transform: scale(1.7);
+        opacity: 10;
+    }
+    20%{
+        transform: scale(2.2);
+        opacity: 10;
+    }
+    30%{
+        transform: scale(2.6);
+        opacity: 10;
+    }
+    40%{
+        transform: scale(3.5);
+        opacity: 10;
+    }
+    50%{
+        transform: scale(4);
+        opacity: 10;
+    }
+    60%{
+        transform: scale(4.3);
+        opacity: 10;
+    }
+    70%{
+        transform: scale(5);
+        opacity: 10;
+    }
+    80%{
+        transform: scale(5.5);
+        opacity: 10;
+    }
+    90%{
+        transform: scale(6.0);
+        opacity: 10;
+    }
+    100%{
+        transform: scale(7);
+        opacity: 10;
+    }
+}
+
+.plane_side{
+    animation-delay: 1s;
+    position: relative;
+    animation-name: attack;
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+
+@keyframes attack{
+    0%{
+        opacity: 10;
+        transform:translateX(0px);
+    }
+    
+    100%{
+        transform:translateX(-400px);
+        opacity: 10;
+        
+        
+    }
+}
